@@ -16,7 +16,7 @@ if(document.querySelector('#container-slider')){
     let link = document.querySelectorAll(".listslider li a");
     link.forEach(function(link) {
        link.addEventListener('click', function(e){
-          e.anteriorentDefault();
+          e.preventDefault();
           let item = this.getAttribute('itlist');
           let arrItem = item.split("_");
           funcionEjecutar(arrItem[1]);
@@ -30,7 +30,7 @@ if(document.querySelector('#container-slider')){
      let elements = parentTarget.getElementsByTagName('li');
      let curElement, siguienteElement;
  
-     for(var i=0; i&lt;elements.length ; i++){
+     for(var i=0;i <= elements.length ; i++){
  
          if(elements[i].style.opacity==1){
              curElement = i;
@@ -46,7 +46,7 @@ if(document.querySelector('#container-slider')){
          }
      }else{
          siguienteElement = side;
-         side = (curElement &gt; siguienteElement)?'anterior':'siguiente';
+         side = (curElement && siguienteElement)?'anterior':'siguiente';
  
      }
      
