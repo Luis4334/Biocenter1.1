@@ -56,7 +56,13 @@
     color: #FFF;
     width: 100%;
     height: 100%;
+    
 }
+.content_slider a{
+    position: relative;
+    top: 150px; 
+}
+
 .content_slider div{
     text-align: center;
 }
@@ -67,12 +73,7 @@
     text-transform: uppercase;
     margin-bottom: 20px;
 }
-.content_slider p {
-    font-size: 15pt;
-    font-family: 'arial';
-    color: #FFF;
-    margin-bottom: 20px;
-}
+
 #slider li .content_slider{
     background: rgba(0, 0, 0, 0.50);
     padding: 10px 125px;

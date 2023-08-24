@@ -9,7 +9,7 @@ $('.navTrigger').click(function () {
 /*funcionalidad de slifer*/
 
 if(document.querySelector('#container-slider')){
-    setInterval('funcionEjecutar("siguiente")',5000);
+    setInterval('funcionEjecutar("siguiente")',9000);
  }
  //------------------------------ LIST SLIDER -------------------------
  if(document.querySelector('.listslider')){
@@ -30,7 +30,7 @@ if(document.querySelector('#container-slider')){
      let elements = parentTarget.getElementsByTagName('li');
      let curElement, siguienteElement;
  
-     for(var i=0;i <= elements.length ; i++){
+     for(var i=0; i <= elements.length ; i++){
  
          if(elements[i].style.opacity==1){
              curElement = i;
